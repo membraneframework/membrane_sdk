@@ -1,35 +1,28 @@
-# Membrane Template Plugin
+# Membrane Gigachad
 
-[![Hex.pm](https://img.shields.io/hexpm/v/membrane_template_plugin.svg)](https://hex.pm/packages/membrane_template_plugin)
-[![API Docs](https://img.shields.io/badge/api-docs-yellow.svg?style=flat)](https://hexdocs.pm/membrane_template_plugin)
-[![CircleCI](https://circleci.com/gh/membraneframework/membrane_template_plugin.svg?style=svg)](https://circleci.com/gh/membraneframework/membrane_template_plugin)
+[![Hex.pm](https://img.shields.io/hexpm/v/membrane_gigachad.svg)](https://hex.pm/packages/membrane_gigachad)
+[![API Docs](https://img.shields.io/badge/api-docs-yellow.svg?style=flat)](https://hexdocs.pm/membrane_gigachad)
+[![CircleCI](https://circleci.com/gh/membraneframework/membrane_gigachad.svg?style=svg)](https://circleci.com/gh/membraneframework/membrane_gigachad)
 
-This repository contains a template for new plugins.
-
-Check out different branches for other flavours of template.
-
-It is part of [Membrane Multimedia Framework](https://membraneframework.org).
+This package provides all the plugins of the [Membrane Multimedia Framework](https://membraneframework.org) by depending on them. Check the `mix.exs` file for the list of packages. This package provides the whole power of Membrane, though it may take some time to compile and requires you to have installed all the native dependencies needed for all of the plugins.
 
 ## Installation
 
-The package can be installed by adding `membrane_template_plugin` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `membrane_gigachad` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:membrane_template_plugin, "~> 0.1.0"}
+    {:membrane_gigachad, github: "membraneframework-labs/membrane_gigachad"}
   ]
 end
 ```
 
-## Usage
-
-TODO
 
 ## Copyright and License
 
-Copyright 2020, [Software Mansion](https://swmansion.com/?utm_source=git&utm_medium=readme&utm_campaign=membrane_template_plugin)
+Copyright 2020, [Software Mansion](https://swmansion.com/?utm_source=git&utm_medium=readme&utm_campaign=membrane_gigachad)
 
-[![Software Mansion](https://logo.swmansion.com/logo?color=white&variant=desktop&width=200&tag=membrane-github)](https://swmansion.com/?utm_source=git&utm_medium=readme&utm_campaign=membrane_template_plugin)
+[![Software Mansion](https://logo.swmansion.com/logo?color=white&variant=desktop&width=200&tag=membrane-github)](https://swmansion.com/?utm_source=git&utm_medium=readme&utm_campaign=membrane_gigachad)
 
 Licensed under the [Apache License, Version 2.0](LICENSE)
