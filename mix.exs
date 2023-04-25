@@ -85,7 +85,7 @@ defmodule Membrane.Gigachad.Mixfile do
       {:membrane_flac_plugin, "~> 0.9.0"},
       {:membrane_ffmpeg_generator, "~> 0.1.0"},
       {:membrane_ogg_plugin, "~> 0.1.0"},
-      # {:membrane_mp3_lame_plugin, "~> 0.15.0"},
+      {:membrane_mp3_lame_plugin, "~> 0.15.0"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:dialyxir, ">= 0.0.0", only: :dev, runtime: false},
       {:credo, ">= 0.0.0", only: :dev, runtime: false}
