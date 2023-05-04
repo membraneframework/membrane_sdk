@@ -13,7 +13,7 @@ The package can be installed by adding `membrane_gigachad` to your list of depen
 ```elixir
 def deps do
   [
-    {:membrane_gigachad, github: "membraneframework-labs/membrane_gigachad"}
+    {:membrane_gigachad, github: "membraneframework/membrane_gigachad"}
   ]
 end
 ```
