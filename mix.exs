@@ -1,12 +1,12 @@
-defmodule Membrane.Gigachad.Mixfile do
+defmodule Membrane.SDK.Mixfile do
   use Mix.Project
 
   @version "0.1.0"
-  @github_url "https://github.com/membraneframework-labs/membrane_gigachad"
+  @github_url "https://github.com/membraneframework-labs/membrane_sdk"
 
   def project do
     [
-      app: :membrane_gigachad,
+      app: :membrane_sdk,
       version: @version,
       elixir: "~> 1.13",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -19,7 +19,7 @@ defmodule Membrane.Gigachad.Mixfile do
       package: package(),
 
       # docs
-      name: "Membrane gigachad",
+      name: "Membrane SDK",
       source_url: @github_url,
       docs: docs()
     ]
@@ -38,7 +38,7 @@ defmodule Membrane.Gigachad.Mixfile do
     [
       {:membrane_core, "~> 0.12.7"},
       {:membrane_h264_ffmpeg_plugin, "~> 0.29.0"},
-      #TODO: remove override
+      # TODO: remove override
       {:membrane_file_plugin, "~> 0.15.0", override: true},
       {:membrane_common_c, "~> 0.15.0"},
       {:membrane_mp4_plugin, "~> 0.30.1"},
@@ -79,7 +79,7 @@ defmodule Membrane.Gigachad.Mixfile do
       {:membrane_wav_plugin, "~> 0.9.2"},
       {:membrane_rtp_mpegaudio_plugin, "~> 0.13.0"},
       {:membrane_audiometer_plugin, "~> 0.11.0"},
-      #TODO: to be removed
+      # TODO: to be removed
       {:membrane_raw_audio_format, "~> 0.11.0", override: true},
       {:membrane_camera_capture_plugin, "~> 0.5.0"},
       {:membrane_ivf_plugin, "~> 0.6.0"},
@@ -124,7 +124,7 @@ defmodule Membrane.Gigachad.Mixfile do
       extras: ["README.md", "LICENSE"],
       formatters: ["html"],
       source_ref: "v#{@version}",
-      nest_modules_by_prefix: [Membrane.Gigachad]
+      nest_modules_by_prefix: [Membrane.SDK]
     ]
   end
 end
