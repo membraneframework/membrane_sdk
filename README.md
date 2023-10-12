@@ -13,7 +13,7 @@ The package can be installed by adding `membrane_sdk` to your list of dependenci
 ```elixir
 def deps do
   [
-    {:membrane_sdk, github: "membraneframework/membrane_sdk"}
+    {:membrane_sdk, github: "~> 0.1"}
   ]
 end
 ```
