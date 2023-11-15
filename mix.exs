@@ -82,6 +82,9 @@ defmodule Membrane.SDK.Mixfile do
       {:ex_libsrtp, "~> 0.6.0"},
       {:ex_dtls, "~> 0.12.0"},
       {:membrane_http_adaptive_stream_plugin, "~> 0.17.1"},
+      {:membrane_camera_capture_plugin, "~> 0.6.1"},
+      {:membrane_ffmpeg_video_filter_plugin, "~> 0.12.0"},
+      {:membrane_rtmp_plugin, "~> 0.18.0"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:dialyxir, ">= 0.0.0", only: :dev, runtime: false},
       {:credo, ">= 0.0.0", only: :dev, runtime: false}
