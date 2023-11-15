@@ -79,7 +79,7 @@ defmodule Membrane.SDK.Mixfile do
       {:membrane_ogg_plugin, "~> 0.2.1"},
       {:membrane_rtsp, "~> 0.5.0"},
       {:ex_sdp, "~> 0.11.0"},
-      {:ex_libsrtp, "~> 0.6.0"},
+      {:ex_libsrtp, "~> 0.7.0", override: true},
       {:ex_dtls, "~> 0.12.0"},
       {:membrane_http_adaptive_stream_plugin, "~> 0.17.1"},
       {:membrane_camera_capture_plugin, "~> 0.6.1"},
