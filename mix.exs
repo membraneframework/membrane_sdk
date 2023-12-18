@@ -65,6 +65,7 @@ defmodule Membrane.SDK.Mixfile do
       {:membrane_h264_plugin, "~> 0.9.0"},
       {:bunch, "~> 1.6"},
       {:membrane_mp3_mad_plugin, "~> 0.18.0"},
+      {:membrane_mp3_lame_plugin, "~> 0.18.0"},
       {:membrane_fake_plugin, "~> 0.11.0"},
       {:membrane_hackney_plugin, "~> 0.11.0"},
       {:membrane_raw_video_parser_plugin, "~> 0.12.0"},
