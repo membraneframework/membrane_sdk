@@ -4,7 +4,8 @@
 [![API Docs](https://img.shields.io/badge/api-docs-yellow.svg?style=flat)](https://hexdocs.pm/membrane_sdk)
 [![CircleCI](https://circleci.com/gh/membraneframework/membrane_sdk.svg?style=svg)](https://circleci.com/gh/membraneframework/membrane_sdk)
 
-This package provides all the plugins of the [Membrane Multimedia Framework](https://membraneframework.org) by depending on them. Check the `mix.exs` file for the list of packages. This package provides the whole power of Membrane, though it may take some time to compile and requires you to have installed all the native dependencies needed for all of the plugins.
+This package provides most of the packages of the [Membrane Framework](https://membrane.stream) by depending on them - check the [docs](https://hexdocs.pm/membrane_sdk/Membrane.SDK.html) or the `mix.exs` file for the complete list.
+In particular, all the packages maintained by the core team are included, except for the ones that require a specific environment or custom installation. Thus, Membrane SDK should work out of the box on most popular systems, including Mac OS, Ubuntu and Windows via WSL.
 
 ## Installation
 
@@ -13,7 +14,7 @@ The package can be installed by adding `membrane_sdk` to your list of dependenci
 ```elixir
 def deps do
   [
-    {:membrane_sdk, github: "~> 0.1"}
+    {:membrane_sdk, github: "~> 1.0"}
   ]
 end
 ```
