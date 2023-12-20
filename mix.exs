@@ -2,7 +2,7 @@ defmodule Membrane.SDK.Mixfile do
   use Mix.Project
 
   @version "0.1.0"
-  @github_url "https://github.com/membraneframework-labs/membrane_sdk"
+  @github_url "https://github.com/membraneframework/membrane_sdk"
 
   def project do
     [
@@ -122,7 +122,7 @@ defmodule Membrane.SDK.Mixfile do
 
   defp docs do
     [
-      main: "readme",
+      main: "Membrane.SDK",
       extras: ["README.md", "LICENSE"],
       formatters: ["html"],
       source_ref: "v#{@version}",
