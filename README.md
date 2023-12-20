@@ -14,7 +14,7 @@ The package can be installed by adding `membrane_sdk` to your list of dependenci
 ```elixir
 def deps do
   [
-    {:membrane_sdk, "~> 1.0"}
+    {:membrane_sdk, "~> 0.1.0"}
   ]
 end
 ```

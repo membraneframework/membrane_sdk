@@ -1,7 +1,7 @@
 defmodule Membrane.SDK.Mixfile do
   use Mix.Project
 
-  @version "1.0.0"
+  @version "0.1.0"
   @github_url "https://github.com/membraneframework-labs/membrane_sdk"
 
   def project do
