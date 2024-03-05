@@ -1,7 +1,7 @@
 defmodule Membrane.SDK.Mixfile do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.1"
   @github_url "https://github.com/membraneframework-labs/membrane_sdk"
 
   def project do
@@ -62,7 +62,7 @@ defmodule Membrane.SDK.Mixfile do
       {:membrane_sdl_plugin, "~> 0.18.0"},
       {:membrane_ffmpeg_swresample_plugin, "~> 0.19.0"},
       {:membrane_udp_plugin, "~> 0.12.0"},
-      {:membrane_h264_plugin, "~> 0.9.0"},
+      {:membrane_h26x_plugin, "~> 0.10.0"},
       {:bunch, "~> 1.6"},
       {:membrane_mp3_mad_plugin, "~> 0.18.0"},
       {:membrane_mp3_lame_plugin, "~> 0.18.0"},
