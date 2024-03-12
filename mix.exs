@@ -40,7 +40,7 @@ defmodule Membrane.SDK.Mixfile do
       {:membrane_h264_ffmpeg_plugin, "~> 0.31.0"},
       {:membrane_file_plugin, "~> 0.16.0"},
       {:membrane_common_c, "~> 0.16.0"},
-      {:membrane_mp4_plugin, "~> 0.31.0"},
+      {:membrane_mp4_plugin, "~> 0.33.1"},
       {:membrane_tee_plugin, "~> 0.12.0"},
       {:membrane_aac_plugin, "~> 0.18.0"},
       {:membrane_rtp_h264_plugin, "~> 0.19.0"},
@@ -55,7 +55,7 @@ defmodule Membrane.SDK.Mixfile do
       {:membrane_generator_plugin, "~> 0.10.0"},
       {:membrane_audio_mix_plugin, "~> 0.16.0"},
       {:membrane_audio_filler_plugin, "~> 0.3.0"},
-      {:membrane_flv_plugin, "~> 0.11.0"},
+      {:membrane_flv_plugin, "~> 0.12.0"},
       {:membrane_ffmpeg_swscale_plugin, "~> 0.15.0"},
       {:membrane_video_merger_plugin, "~> 0.9.0"},
       {:membrane_stream_plugin, "~> 0.4.0"},
@@ -81,10 +81,10 @@ defmodule Membrane.SDK.Mixfile do
       {:membrane_rtsp, "~> 0.5.0"},
       {:ex_sdp, "~> 0.13.0"},
       {:ex_libsrtp, "~> 0.7.0"},
-      {:membrane_http_adaptive_stream_plugin, "~> 0.18.0"},
+      {:membrane_http_adaptive_stream_plugin, "~> 0.18.3"},
       {:membrane_camera_capture_plugin, "~> 0.7.0"},
       {:membrane_ffmpeg_video_filter_plugin, "~> 0.13.0"},
-      {:membrane_rtmp_plugin, "~> 0.19.0"},
+      {:membrane_rtmp_plugin, "~> 0.23.1"},
       {:membrane_portaudio_plugin, "~> 0.18.0"}
     ]
 
