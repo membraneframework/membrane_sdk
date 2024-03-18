@@ -36,31 +36,18 @@ defmodule Membrane.SDK.Mixfile do
 
   defp deps do
     membrane_deps = [
-      # {:membrane_http_adaptive_stream_plugin, path: "/Users/bartekch/Desktop/membrane_http_adaptive_stream_plugin"}, # after mp4_plugin update tests fail
-      # {:membrane_http_adaptive_stream_plugin, "~> 0.18.3"}, # update version after new release
 
-      # {:membrane_rtp_plugin, path: "/Users/bartekch/Desktop/membrane_rtp_plugin"}, # deps.get fail (git checkout)
-      # {:membrane_rtp_plugin, "~> 0.27.2"}, # update version after new release
+      # {:membrane_wav_plugin, "~> 0.10.1"}, # testy sie wywalaja na ci, lokalnie dziala, zmergowane, trzeba otagowac i zebic release i publish
+      # {:membrane_matroska_plugin, "~> 0.5.1"}, # testy sie wywalaja na ci (to samo co wav), lokalnie dziala, nie zmegrowane
 
-      # {:membrane_rtmp_plugin, path: "/Users/bartekch/Desktop/membrane_rtmp_plugin"}, # tests fail (localhost failed to connect)
-      # {:membrane_rtmp_plugin, "~> 0.23.1"}, # update version after new release
+      # {:membrane_rtmp_plugin, "~> 0.23.2"}, # waiting for approve
+      # {:membrane_http_adaptive_stream_plugin, "~> 0.18.4"}, # waiting for approve
 
-      {:membrane_rtsp, path: "/Users/bartekch/Desktop/membrane_rtsp"}, # updated, release as 0.6.2
-      # {:membrane_rtsp, "~> 0.6.1"}, # update version after new release
-
-      {:membrane_matroska_plugin, path: "/Users/bartekch/Desktop/membrane_matroska_plugin"}, # updated, release as 0.5.1
-      # {:membrane_matroska_plugin, "~> 0.5.0"}, # update version after new release
-
-      {:membrane_mp4_plugin, path: "/Users/bartekch/Desktop/membrane_mp4_plugin"}, # updated, release as 0.34.1
-      # {:membrane_mp4_plugin, "~> 0.34.0"}, # update version after new release
-
-      {:membrane_raw_video_parser_plugin, path: "/Users/bartekch/Desktop/membrane_raw_video_parser_plugin"}, # updated, release as 0.12.1
-      # {:membrane_raw_video_parser_plugin, "~> 0.12.0"}, # update version after new release
-
-      {:membrane_wav_plugin, path: "/Users/bartekch/Desktop/membrane_wav_plugin"}, # updated, release as 0.10.1
-      # {:membrane_wav_plugin, "~> 0.10.0"}, # update version after new release
-
+      {:membrane_rtp_plugin, "~> 0.27.1"}, # done
       {:membrane_file_plugin, "~> 0.17.0"}, # done
+      {:membrane_raw_video_parser_plugin, "~> 0.12.1"}, # done
+      {:membrane_mp4_plugin, "~> 0.34.1"}, # done
+      {:membrane_rtsp, "~> 0.6.2"}, # done
       {:membrane_core, "~> 1.0.1"}, # done
       {:membrane_h26x_plugin, "~> 0.10.0"}, # done
       {:membrane_h264_ffmpeg_plugin, "~> 0.31.5"}, # done
