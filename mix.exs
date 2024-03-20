@@ -36,59 +36,56 @@ defmodule Membrane.SDK.Mixfile do
 
   defp deps do
     membrane_deps = [
-
-      # {:membrane_wav_plugin, "~> 0.10.1"}, # testy sie wywalaja na ci, lokalnie dziala, zmergowane, trzeba otagowac i zebic release i publish
-      # {:membrane_matroska_plugin, "~> 0.5.1"}, # testy sie wywalaja na ci (to samo co wav), lokalnie dziala, nie zmegrowane
-
-      # {:membrane_rtmp_plugin, "~> 0.23.2"}, # waiting for approve
-      # {:membrane_http_adaptive_stream_plugin, "~> 0.18.4"}, # waiting for approve
-
-      {:membrane_rtp_plugin, "~> 0.27.1"}, # done
-      {:membrane_file_plugin, "~> 0.17.0"}, # done
-      {:membrane_raw_video_parser_plugin, "~> 0.12.1"}, # done
-      {:membrane_mp4_plugin, "~> 0.34.1"}, # done
-      {:membrane_rtsp, "~> 0.6.2"}, # done
-      {:membrane_core, "~> 1.0.1"}, # done
-      {:membrane_h26x_plugin, "~> 0.10.0"}, # done
-      {:membrane_h264_ffmpeg_plugin, "~> 0.31.5"}, # done
-      {:membrane_common_c, "~> 0.16.0"}, # done
-      {:membrane_tee_plugin, "~> 0.12.0"}, # done
-      {:membrane_aac_plugin, "~> 0.18.1"}, # done
-      {:membrane_rtp_h264_plugin, "~> 0.19.0"}, # done
-      {:membrane_rtp_opus_plugin, "~> 0.9.0"}, # done
-      {:ex_sdp, "~> 0.15.0"}, # done
-      {:membrane_funnel_plugin, "~> 0.9.0"}, # done
-      {:membrane_rtp_vp8_plugin, "~> 0.9.0"}, # done
-      {:membrane_opus_plugin, "~> 0.20.1"}, # done
-      {:membrane_aac_fdk_plugin, "~> 0.18.6"}, # done
-      {:membrane_realtimer_plugin, "~> 0.9.0"}, # done
-      {:membrane_framerate_converter_plugin, "~> 0.8.0"}, # done
-      {:membrane_generator_plugin, "~> 0.10.0"}, # done
-      {:membrane_audio_mix_plugin, "~> 0.16.0"}, # done
-      {:membrane_audio_filler_plugin, "~> 0.3.0"}, # done
-      {:membrane_flv_plugin, "~> 0.12.0"}, # done
-      {:membrane_ffmpeg_swscale_plugin, "~> 0.15.1"}, # done
-      {:membrane_video_merger_plugin, "~> 0.9.0"}, # done
-      {:membrane_stream_plugin, "~> 0.4.0"}, # done
-      {:membrane_sdl_plugin, "~> 0.18.2"}, # done
-      {:membrane_ffmpeg_swresample_plugin, "~> 0.19.2"}, # done
-      {:membrane_udp_plugin, "~> 0.13.0"}, # done
-      {:bunch, "~> 1.6.1"}, # done
-      {:membrane_mp3_mad_plugin, "~> 0.18.2"}, # done
-      {:membrane_mp3_lame_plugin, "~> 0.18.1"}, # done
-      {:membrane_fake_plugin, "~> 0.11.0"}, # done
-      {:membrane_hackney_plugin, "~> 0.11.0"}, # done
-      {:membrane_rtp_mpegaudio_plugin, "~> 0.14.0"}, # done
-      {:membrane_audiometer_plugin, "~> 0.12.0"}, # done
-      {:membrane_raw_audio_format, "~> 0.12.0"}, # done
-      {:membrane_ivf_plugin, "~> 0.7.0"}, # done
-      {:membrane_scissors_plugin, "~> 0.8.0"}, # done
-      {:membrane_flac_plugin, "~> 0.11.0"}, # done
-      {:membrane_ogg_plugin, "~> 0.3.0"}, # done
-      {:ex_libsrtp, "~> 0.7.2"}, # done
-      {:membrane_camera_capture_plugin, "~> 0.7.2"}, # done
-      {:membrane_ffmpeg_video_filter_plugin, "~> 0.13.1"}, # done
-      {:membrane_portaudio_plugin, "~> 0.19.0"} # done
+      {:membrane_wav_plugin, "~> 0.10.1"},
+      {:membrane_matroska_plugin, "~> 0.5.1"},
+      {:membrane_http_adaptive_stream_plugin, "~> 0.18.4"},
+      {:membrane_rtmp_plugin, "~> 0.23.2"},
+      {:membrane_rtp_plugin, "~> 0.27.1"},
+      {:membrane_file_plugin, "~> 0.17.0"},
+      {:membrane_raw_video_parser_plugin, "~> 0.12.1"},
+      {:membrane_mp4_plugin, "~> 0.34.1"},
+      {:membrane_rtsp, "~> 0.6.2"},
+      {:membrane_core, "~> 1.0.1"},
+      {:membrane_h26x_plugin, "~> 0.10.0"},
+      {:membrane_h264_ffmpeg_plugin, "~> 0.31.5"},
+      {:membrane_common_c, "~> 0.16.0"},
+      {:membrane_tee_plugin, "~> 0.12.0"},
+      {:membrane_aac_plugin, "~> 0.18.1"},
+      {:membrane_rtp_h264_plugin, "~> 0.19.0"},
+      {:membrane_rtp_opus_plugin, "~> 0.9.0"},
+      {:ex_sdp, "~> 0.15.0"},
+      {:membrane_funnel_plugin, "~> 0.9.0"},
+      {:membrane_rtp_vp8_plugin, "~> 0.9.0"},
+      {:membrane_opus_plugin, "~> 0.20.1"},
+      {:membrane_aac_fdk_plugin, "~> 0.18.6"},
+      {:membrane_realtimer_plugin, "~> 0.9.0"},
+      {:membrane_framerate_converter_plugin, "~> 0.8.0"},
+      {:membrane_generator_plugin, "~> 0.10.0"},
+      {:membrane_audio_mix_plugin, "~> 0.16.0"},
+      {:membrane_audio_filler_plugin, "~> 0.3.0"},
+      {:membrane_flv_plugin, "~> 0.12.0"},
+      {:membrane_ffmpeg_swscale_plugin, "~> 0.15.1"},
+      {:membrane_video_merger_plugin, "~> 0.9.0"},
+      {:membrane_stream_plugin, "~> 0.4.0"},
+      {:membrane_sdl_plugin, "~> 0.18.2"},
+      {:membrane_ffmpeg_swresample_plugin, "~> 0.19.2"},
+      {:membrane_udp_plugin, "~> 0.13.0"},
+      {:bunch, "~> 1.6.1"},
+      {:membrane_mp3_mad_plugin, "~> 0.18.2"},
+      {:membrane_mp3_lame_plugin, "~> 0.18.1"},
+      {:membrane_fake_plugin, "~> 0.11.0"},
+      {:membrane_hackney_plugin, "~> 0.11.0"},
+      {:membrane_rtp_mpegaudio_plugin, "~> 0.14.0"},
+      {:membrane_audiometer_plugin, "~> 0.12.0"},
+      {:membrane_raw_audio_format, "~> 0.12.0"},
+      {:membrane_ivf_plugin, "~> 0.7.0"},
+      {:membrane_scissors_plugin, "~> 0.8.0"},
+      {:membrane_flac_plugin, "~> 0.11.0"},
+      {:membrane_ogg_plugin, "~> 0.3.0"},
+      {:ex_libsrtp, "~> 0.7.2"},
+      {:membrane_camera_capture_plugin, "~> 0.7.2"},
+      {:membrane_ffmpeg_video_filter_plugin, "~> 0.13.1"},
+      {:membrane_portaudio_plugin, "~> 0.19.0"}
     ]
 
     membrane_deps ++
