@@ -6,6 +6,7 @@ defmodule Membrane.SDK.Mixfile do
 
   def project do
     [
+      homepage_url: "https://membrane.stream",
       app: :membrane_sdk,
       version: @version,
       elixir: "~> 1.13",
