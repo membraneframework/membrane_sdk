@@ -57,7 +57,7 @@ defmodule Membrane.SDK.Mixfile do
       {:membrane_funnel_plugin, "~> 0.9.0"},
       {:membrane_rtp_vp8_plugin, "~> 0.9.0"},
       {:membrane_opus_plugin, "~> 0.20.1"},
-      {:membrane_aac_fdk_plugin, "~> 0.18.6"},
+      {:membrane_aac_fdk_plugin, "~> 0.18.8"},
       {:membrane_realtimer_plugin, "~> 0.9.0"},
       {:membrane_framerate_converter_plugin, "~> 0.8.0"},
       {:membrane_generator_plugin, "~> 0.10.0"},
