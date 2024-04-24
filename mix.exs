@@ -48,6 +48,7 @@ defmodule Membrane.SDK.Mixfile do
       {:membrane_core, "~> 1.0.1"},
       {:membrane_h26x_plugin, "~> 0.10.0"},
       {:membrane_h264_ffmpeg_plugin, "~> 0.31.5"},
+      {:membrane_h265_ffmpeg_plugin, "~> 0.4.1"},
       {:membrane_common_c, "~> 0.16.0"},
       {:membrane_tee_plugin, "~> 0.12.0"},
       {:membrane_aac_plugin, "~> 0.18.1"},
@@ -85,7 +86,8 @@ defmodule Membrane.SDK.Mixfile do
       {:ex_libsrtp, "~> 0.7.2"},
       {:membrane_camera_capture_plugin, "~> 0.7.2"},
       {:membrane_ffmpeg_video_filter_plugin, "~> 0.13.1"},
-      {:membrane_portaudio_plugin, "~> 0.19.0"}
+      {:membrane_portaudio_plugin, "~> 0.19.0"},
+      {:membrane_overlay_plugin, "~> 0.1.0"}
     ]
 
     membrane_deps ++
