@@ -69,7 +69,7 @@ defmodule Membrane.SDK.Mixfile do
       {:membrane_video_merger_plugin, "~> 0.9.0"},
       {:membrane_stream_plugin, "~> 0.4.0"},
       {:membrane_sdl_plugin, "~> 0.18.2"},
-      {:membrane_ffmpeg_swresample_plugin, "~> 0.20.1"},
+      {:membrane_ffmpeg_swresample_plugin, "~> 0.20.2"},
       {:membrane_udp_plugin, "~> 0.13.0"},
       {:bunch, "~> 1.6.1"},
       {:membrane_mp3_mad_plugin, "~> 0.18.3"},
